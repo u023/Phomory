@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1648A91E9598FE00D20B38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1648A81E9598FE00D20B38 /* main.m */; };
+		4D1648AC1E9598FE00D20B38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1648AB1E9598FE00D20B38 /* AppDelegate.m */; };
+		4D1648B51E9598FE00D20B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1648B31E9598FE00D20B38 /* Main.storyboard */; };
+		4D1648B71E9598FE00D20B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1648B61E9598FE00D20B38 /* Assets.xcassets */; };
+		4D1648BA1E9598FE00D20B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1648B81E9598FE00D20B38 /* LaunchScreen.storyboard */; };
+		4D1648C51E9598FE00D20B38 /* PhomoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1648C41E9598FE00D20B38 /* PhomoryTests.m */; };
+		4D1648D01E9598FE00D20B38 /* PhomoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1648CF1E9598FE00D20B38 /* PhomoryUITests.m */; };
+		4D4FDBFE1E959B6B001528B8 /* film-reelx32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBF31E959B6B001528B8 /* film-reelx32.png */; };
+		4D4FDBFF1E959B6B001528B8 /* film-reelx64.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBF41E959B6B001528B8 /* film-reelx64.png */; };
+		4D4FDC001E959B6B001528B8 /* loupex32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBF51E959B6B001528B8 /* loupex32.png */; };
+		4D4FDC011E959B6B001528B8 /* loupex64.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBF61E959B6B001528B8 /* loupex64.png */; };
+		4D4FDC021E959B6B001528B8 /* photo-camerax32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBF71E959B6B001528B8 /* photo-camerax32.png */; };
+		4D4FDC031E959B6B001528B8 /* photo-camerax64.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBF81E959B6B001528B8 /* photo-camerax64.png */; };
+		4D4FDC041E959B6B001528B8 /* portraitx32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBF91E959B6B001528B8 /* portraitx32.png */; };
+		4D4FDC051E959B6B001528B8 /* portraitx64.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBFA1E959B6B001528B8 /* portraitx64.png */; };
+		4D4FDC061E959B6B001528B8 /* portraitx128.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBFB1E959B6B001528B8 /* portraitx128.png */; };
+		4D4FDC071E959B6B001528B8 /* settingsx32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBFC1E959B6B001528B8 /* settingsx32.png */; };
+		4D4FDC081E959B6B001528B8 /* settingsx64.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FDBFD1E959B6B001528B8 /* settingsx64.png */; };
+		4D4FDC121E959CA7001528B8 /* PMFirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC111E959CA7001528B8 /* PMFirstRunViewController.m */; };
+		4D4FDC151E959CB8001528B8 /* PMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC141E959CB8001528B8 /* PMSettingsViewController.m */; };
+		4D4FDC181E959CD9001528B8 /* PMTodaysInterestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC171E959CD9001528B8 /* PMTodaysInterestViewController.m */; };
+		4D4FDC1B1E959CEF001528B8 /* PMMyPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC1A1E959CEF001528B8 /* PMMyPhotosViewController.m */; };
+		4D4FDC1E1E959D06001528B8 /* PMCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC1D1E959D06001528B8 /* PMCameraViewController.m */; };
+		4D4FDC211E959E66001528B8 /* PMAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC201E959E66001528B8 /* PMAuthViewController.m */; };
+		4EE038B483B2E119ED61DBEA /* Pods_PhomoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ED59DC8EB4FDB28B31A0FA /* Pods_PhomoryTests.framework */; };
+		76FAE544876C8FD3A4EE5E07 /* Pods_Phomory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678405FC17EDAB80EBF624F5 /* Pods_Phomory.framework */; };
+		B49B2DEA521B31CB8C729E90 /* Pods_PhomoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA69318108D1E5A27CB657ED /* Pods_PhomoryUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D1648C11E9598FE00D20B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D16489C1E9598FE00D20B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1648A31E9598FE00D20B38;
+			remoteInfo = Phomory;
+		};
+		4D1648CC1E9598FE00D20B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D16489C1E9598FE00D20B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1648A31E9598FE00D20B38;
+			remoteInfo = Phomory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C35CCE60C8E76D27DF7BCE2 /* Pods-PhomoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhomoryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhomoryUITests/Pods-PhomoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D1648A41E9598FE00D20B38 /* Phomory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phomory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1648A81E9598FE00D20B38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D1648AA1E9598FE00D20B38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D1648AB1E9598FE00D20B38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D1648B41E9598FE00D20B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D1648B61E9598FE00D20B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D1648B91E9598FE00D20B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D1648BB1E9598FE00D20B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1648C01E9598FE00D20B38 /* PhomoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhomoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1648C41E9598FE00D20B38 /* PhomoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhomoryTests.m; sourceTree = "<group>"; };
+		4D1648C61E9598FE00D20B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1648CB1E9598FE00D20B38 /* PhomoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhomoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1648CF1E9598FE00D20B38 /* PhomoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhomoryUITests.m; sourceTree = "<group>"; };
+		4D1648D11E9598FE00D20B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4FDBF31E959B6B001528B8 /* film-reelx32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "film-reelx32.png"; path = "Resource/film-reelx32.png"; sourceTree = "<group>"; };
+		4D4FDBF41E959B6B001528B8 /* film-reelx64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "film-reelx64.png"; path = "Resource/film-reelx64.png"; sourceTree = "<group>"; };
+		4D4FDBF51E959B6B001528B8 /* loupex32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loupex32.png; path = Resource/loupex32.png; sourceTree = "<group>"; };
+		4D4FDBF61E959B6B001528B8 /* loupex64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loupex64.png; path = Resource/loupex64.png; sourceTree = "<group>"; };
+		4D4FDBF71E959B6B001528B8 /* photo-camerax32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photo-camerax32.png"; path = "Resource/photo-camerax32.png"; sourceTree = "<group>"; };
+		4D4FDBF81E959B6B001528B8 /* photo-camerax64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photo-camerax64.png"; path = "Resource/photo-camerax64.png"; sourceTree = "<group>"; };
+		4D4FDBF91E959B6B001528B8 /* portraitx32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = portraitx32.png; path = Resource/portraitx32.png; sourceTree = "<group>"; };
+		4D4FDBFA1E959B6B001528B8 /* portraitx64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = portraitx64.png; path = Resource/portraitx64.png; sourceTree = "<group>"; };
+		4D4FDBFB1E959B6B001528B8 /* portraitx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = portraitx128.png; path = Resource/portraitx128.png; sourceTree = "<group>"; };
+		4D4FDBFC1E959B6B001528B8 /* settingsx32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsx32.png; path = Resource/settingsx32.png; sourceTree = "<group>"; };
+		4D4FDBFD1E959B6B001528B8 /* settingsx64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsx64.png; path = Resource/settingsx64.png; sourceTree = "<group>"; };
+		4D4FDC101E959CA7001528B8 /* PMFirstRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMFirstRunViewController.h; sourceTree = "<group>"; };
+		4D4FDC111E959CA7001528B8 /* PMFirstRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMFirstRunViewController.m; sourceTree = "<group>"; };
+		4D4FDC131E959CB8001528B8 /* PMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMSettingsViewController.h; sourceTree = "<group>"; };
+		4D4FDC141E959CB8001528B8 /* PMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMSettingsViewController.m; sourceTree = "<group>"; };
+		4D4FDC161E959CD9001528B8 /* PMTodaysInterestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTodaysInterestViewController.h; sourceTree = "<group>"; };
+		4D4FDC171E959CD9001528B8 /* PMTodaysInterestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMTodaysInterestViewController.m; sourceTree = "<group>"; };
+		4D4FDC191E959CEF001528B8 /* PMMyPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyPhotosViewController.h; sourceTree = "<group>"; };
+		4D4FDC1A1E959CEF001528B8 /* PMMyPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyPhotosViewController.m; sourceTree = "<group>"; };
+		4D4FDC1C1E959D06001528B8 /* PMCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCameraViewController.h; sourceTree = "<group>"; };
+		4D4FDC1D1E959D06001528B8 /* PMCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCameraViewController.m; sourceTree = "<group>"; };
+		4D4FDC1F1E959E66001528B8 /* PMAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAuthViewController.h; sourceTree = "<group>"; };
+		4D4FDC201E959E66001528B8 /* PMAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAuthViewController.m; sourceTree = "<group>"; };
+		5EFD887DF47BBBFB64C31C6E /* Pods-PhomoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhomoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhomoryTests/Pods-PhomoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		614BACA5147897A098265001 /* Pods-Phomory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phomory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phomory/Pods-Phomory.debug.xcconfig"; sourceTree = "<group>"; };
+		678405FC17EDAB80EBF624F5 /* Pods_Phomory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phomory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9791247CCBCE1B90047B8DA0 /* Pods-PhomoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhomoryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhomoryTests/Pods-PhomoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A79A8D9BE56023BF8C4412F4 /* Pods-PhomoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhomoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhomoryUITests/Pods-PhomoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFF88B9CF062C6B2B1DF715E /* Pods-Phomory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phomory.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phomory/Pods-Phomory.release.xcconfig"; sourceTree = "<group>"; };
+		D2ED59DC8EB4FDB28B31A0FA /* Pods_PhomoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhomoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA69318108D1E5A27CB657ED /* Pods_PhomoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhomoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D1648A11E9598FE00D20B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FAE544876C8FD3A4EE5E07 /* Pods_Phomory.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1648BD1E9598FE00D20B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE038B483B2E119ED61DBEA /* Pods_PhomoryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1648C81E9598FE00D20B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49B2DEA521B31CB8C729E90 /* Pods_PhomoryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D16489B1E9598FE00D20B38 = {
+			isa = PBXGroup;
+			children = (
+				4D1648A61E9598FE00D20B38 /* Phomory */,
+				4D1648C31E9598FE00D20B38 /* PhomoryTests */,
+				4D1648CE1E9598FE00D20B38 /* PhomoryUITests */,
+				4D1648A51E9598FE00D20B38 /* Products */,
+				FB54C0BB185B8E37AFC32A65 /* Pods */,
+				8F095CD085AB64445FCC6416 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D1648A51E9598FE00D20B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D1648A41E9598FE00D20B38 /* Phomory.app */,
+				4D1648C01E9598FE00D20B38 /* PhomoryTests.xctest */,
+				4D1648CB1E9598FE00D20B38 /* PhomoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D1648A61E9598FE00D20B38 /* Phomory */ = {
+			isa = PBXGroup;
+			children = (
+				4D1648AA1E9598FE00D20B38 /* AppDelegate.h */,
+				4D1648AB1E9598FE00D20B38 /* AppDelegate.m */,
+				4D4FDC101E959CA7001528B8 /* PMFirstRunViewController.h */,
+				4D4FDC111E959CA7001528B8 /* PMFirstRunViewController.m */,
+				4D4FDC131E959CB8001528B8 /* PMSettingsViewController.h */,
+				4D4FDC141E959CB8001528B8 /* PMSettingsViewController.m */,
+				4D4FDC1F1E959E66001528B8 /* PMAuthViewController.h */,
+				4D4FDC201E959E66001528B8 /* PMAuthViewController.m */,
+				4D4FDC161E959CD9001528B8 /* PMTodaysInterestViewController.h */,
+				4D4FDC171E959CD9001528B8 /* PMTodaysInterestViewController.m */,
+				4D4FDC191E959CEF001528B8 /* PMMyPhotosViewController.h */,
+				4D4FDC1A1E959CEF001528B8 /* PMMyPhotosViewController.m */,
+				4D4FDC1C1E959D06001528B8 /* PMCameraViewController.h */,
+				4D4FDC1D1E959D06001528B8 /* PMCameraViewController.m */,
+				4D1648B31E9598FE00D20B38 /* Main.storyboard */,
+				4D1648B61E9598FE00D20B38 /* Assets.xcassets */,
+				4D1648B81E9598FE00D20B38 /* LaunchScreen.storyboard */,
+				4D1648BB1E9598FE00D20B38 /* Info.plist */,
+				4D4FDBEE1E959AF8001528B8 /* Resource */,
+				4D1648A71E9598FE00D20B38 /* Supporting Files */,
+			);
+			path = Phomory;
+			sourceTree = "<group>";
+		};
+		4D1648A71E9598FE00D20B38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D1648A81E9598FE00D20B38 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D1648C31E9598FE00D20B38 /* PhomoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D1648C41E9598FE00D20B38 /* PhomoryTests.m */,
+				4D1648C61E9598FE00D20B38 /* Info.plist */,
+			);
+			path = PhomoryTests;
+			sourceTree = "<group>";
+		};
+		4D1648CE1E9598FE00D20B38 /* PhomoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D1648CF1E9598FE00D20B38 /* PhomoryUITests.m */,
+				4D1648D11E9598FE00D20B38 /* Info.plist */,
+			);
+			path = PhomoryUITests;
+			sourceTree = "<group>";
+		};
+		4D4FDBEE1E959AF8001528B8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4D4FDBF31E959B6B001528B8 /* film-reelx32.png */,
+				4D4FDBF41E959B6B001528B8 /* film-reelx64.png */,
+				4D4FDBF51E959B6B001528B8 /* loupex32.png */,
+				4D4FDBF61E959B6B001528B8 /* loupex64.png */,
+				4D4FDBF71E959B6B001528B8 /* photo-camerax32.png */,
+				4D4FDBF81E959B6B001528B8 /* photo-camerax64.png */,
+				4D4FDBF91E959B6B001528B8 /* portraitx32.png */,
+				4D4FDBFA1E959B6B001528B8 /* portraitx64.png */,
+				4D4FDBFB1E959B6B001528B8 /* portraitx128.png */,
+				4D4FDBFC1E959B6B001528B8 /* settingsx32.png */,
+				4D4FDBFD1E959B6B001528B8 /* settingsx64.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		8F095CD085AB64445FCC6416 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				678405FC17EDAB80EBF624F5 /* Pods_Phomory.framework */,
+				D2ED59DC8EB4FDB28B31A0FA /* Pods_PhomoryTests.framework */,
+				DA69318108D1E5A27CB657ED /* Pods_PhomoryUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB54C0BB185B8E37AFC32A65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				614BACA5147897A098265001 /* Pods-Phomory.debug.xcconfig */,
+				BFF88B9CF062C6B2B1DF715E /* Pods-Phomory.release.xcconfig */,
+				9791247CCBCE1B90047B8DA0 /* Pods-PhomoryTests.debug.xcconfig */,
+				5EFD887DF47BBBFB64C31C6E /* Pods-PhomoryTests.release.xcconfig */,
+				A79A8D9BE56023BF8C4412F4 /* Pods-PhomoryUITests.debug.xcconfig */,
+				3C35CCE60C8E76D27DF7BCE2 /* Pods-PhomoryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D1648A31E9598FE00D20B38 /* Phomory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1648D41E9598FE00D20B38 /* Build configuration list for PBXNativeTarget "Phomory" */;
+			buildPhases = (
+				AB2A3F0A6516C5B81579B1FB /* [CP] Check Pods Manifest.lock */,
+				4D1648A01E9598FE00D20B38 /* Sources */,
+				4D1648A11E9598FE00D20B38 /* Frameworks */,
+				4D1648A21E9598FE00D20B38 /* Resources */,
+				E2271EC065557A2D7DCF5E09 /* [CP] Embed Pods Frameworks */,
+				1BD8E6DB31F4E918BEBAA9AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Phomory;
+			productName = Phomory;
+			productReference = 4D1648A41E9598FE00D20B38 /* Phomory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D1648BF1E9598FE00D20B38 /* PhomoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1648D71E9598FE00D20B38 /* Build configuration list for PBXNativeTarget "PhomoryTests" */;
+			buildPhases = (
+				6B407DBA764F1076C0F174AD /* [CP] Check Pods Manifest.lock */,
+				4D1648BC1E9598FE00D20B38 /* Sources */,
+				4D1648BD1E9598FE00D20B38 /* Frameworks */,
+				4D1648BE1E9598FE00D20B38 /* Resources */,
+				2D14D25F2422ECBCEC6B9AD9 /* [CP] Embed Pods Frameworks */,
+				0EF924D2799600620E707A7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D1648C21E9598FE00D20B38 /* PBXTargetDependency */,
+			);
+			name = PhomoryTests;
+			productName = PhomoryTests;
+			productReference = 4D1648C01E9598FE00D20B38 /* PhomoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D1648CA1E9598FE00D20B38 /* PhomoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1648DA1E9598FE00D20B38 /* Build configuration list for PBXNativeTarget "PhomoryUITests" */;
+			buildPhases = (
+				CB8528CDB096F7B2A4C41589 /* [CP] Check Pods Manifest.lock */,
+				4D1648C71E9598FE00D20B38 /* Sources */,
+				4D1648C81E9598FE00D20B38 /* Frameworks */,
+				4D1648C91E9598FE00D20B38 /* Resources */,
+				7AACBFC7E8441410ED3320DB /* [CP] Embed Pods Frameworks */,
+				9CD2BAFD87AE1AA702DFA3E3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D1648CD1E9598FE00D20B38 /* PBXTargetDependency */,
+			);
+			name = PhomoryUITests;
+			productName = PhomoryUITests;
+			productReference = 4D1648CB1E9598FE00D20B38 /* PhomoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D16489C1E9598FE00D20B38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ynk;
+				TargetAttributes = {
+					4D1648A31E9598FE00D20B38 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 7P8FHBU8VX;
+						ProvisioningStyle = Automatic;
+					};
+					4D1648BF1E9598FE00D20B38 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 7P8FHBU8VX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D1648A31E9598FE00D20B38;
+					};
+					4D1648CA1E9598FE00D20B38 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 7P8FHBU8VX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D1648A31E9598FE00D20B38;
+					};
+				};
+			};
+			buildConfigurationList = 4D16489F1E9598FE00D20B38 /* Build configuration list for PBXProject "Phomory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D16489B1E9598FE00D20B38;
+			productRefGroup = 4D1648A51E9598FE00D20B38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D1648A31E9598FE00D20B38 /* Phomory */,
+				4D1648BF1E9598FE00D20B38 /* PhomoryTests */,
+				4D1648CA1E9598FE00D20B38 /* PhomoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D1648A21E9598FE00D20B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1648BA1E9598FE00D20B38 /* LaunchScreen.storyboard in Resources */,
+				4D4FDC051E959B6B001528B8 /* portraitx64.png in Resources */,
+				4D4FDBFE1E959B6B001528B8 /* film-reelx32.png in Resources */,
+				4D4FDC061E959B6B001528B8 /* portraitx128.png in Resources */,
+				4D1648B71E9598FE00D20B38 /* Assets.xcassets in Resources */,
+				4D4FDC021E959B6B001528B8 /* photo-camerax32.png in Resources */,
+				4D4FDC001E959B6B001528B8 /* loupex32.png in Resources */,
+				4D4FDC031E959B6B001528B8 /* photo-camerax64.png in Resources */,
+				4D1648B51E9598FE00D20B38 /* Main.storyboard in Resources */,
+				4D4FDBFF1E959B6B001528B8 /* film-reelx64.png in Resources */,
+				4D4FDC071E959B6B001528B8 /* settingsx32.png in Resources */,
+				4D4FDC041E959B6B001528B8 /* portraitx32.png in Resources */,
+				4D4FDC011E959B6B001528B8 /* loupex64.png in Resources */,
+				4D4FDC081E959B6B001528B8 /* settingsx64.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1648BE1E9598FE00D20B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1648C91E9598FE00D20B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF924D2799600620E707A7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhomoryTests/Pods-PhomoryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BD8E6DB31F4E918BEBAA9AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phomory/Pods-Phomory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D14D25F2422ECBCEC6B9AD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhomoryTests/Pods-PhomoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B407DBA764F1076C0F174AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AACBFC7E8441410ED3320DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhomoryUITests/Pods-PhomoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD2BAFD87AE1AA702DFA3E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhomoryUITests/Pods-PhomoryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2A3F0A6516C5B81579B1FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB8528CDB096F7B2A4C41589 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2271EC065557A2D7DCF5E09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phomory/Pods-Phomory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D1648A01E9598FE00D20B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4FDC1B1E959CEF001528B8 /* PMMyPhotosViewController.m in Sources */,
+				4D1648AC1E9598FE00D20B38 /* AppDelegate.m in Sources */,
+				4D4FDC1E1E959D06001528B8 /* PMCameraViewController.m in Sources */,
+				4D4FDC181E959CD9001528B8 /* PMTodaysInterestViewController.m in Sources */,
+				4D1648A91E9598FE00D20B38 /* main.m in Sources */,
+				4D4FDC151E959CB8001528B8 /* PMSettingsViewController.m in Sources */,
+				4D4FDC121E959CA7001528B8 /* PMFirstRunViewController.m in Sources */,
+				4D4FDC211E959E66001528B8 /* PMAuthViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1648BC1E9598FE00D20B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1648C51E9598FE00D20B38 /* PhomoryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1648C71E9598FE00D20B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1648D01E9598FE00D20B38 /* PhomoryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D1648C21E9598FE00D20B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1648A31E9598FE00D20B38 /* Phomory */;
+			targetProxy = 4D1648C11E9598FE00D20B38 /* PBXContainerItemProxy */;
+		};
+		4D1648CD1E9598FE00D20B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1648A31E9598FE00D20B38 /* Phomory */;
+			targetProxy = 4D1648CC1E9598FE00D20B38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D1648B31E9598FE00D20B38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D1648B41E9598FE00D20B38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D1648B81E9598FE00D20B38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D1648B91E9598FE00D20B38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D1648D21E9598FE00D20B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D1648D31E9598FE00D20B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D1648D51E9598FE00D20B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614BACA5147897A098265001 /* Pods-Phomory.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				INFOPLIST_FILE = Phomory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.Phomory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D1648D61E9598FE00D20B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF88B9CF062C6B2B1DF715E /* Pods-Phomory.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				INFOPLIST_FILE = Phomory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.Phomory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4D1648D81E9598FE00D20B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9791247CCBCE1B90047B8DA0 /* Pods-PhomoryTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				INFOPLIST_FILE = PhomoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.PhomoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phomory.app/Phomory";
+			};
+			name = Debug;
+		};
+		4D1648D91E9598FE00D20B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFD887DF47BBBFB64C31C6E /* Pods-PhomoryTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				INFOPLIST_FILE = PhomoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.PhomoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phomory.app/Phomory";
+			};
+			name = Release;
+		};
+		4D1648DB1E9598FE00D20B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79A8D9BE56023BF8C4412F4 /* Pods-PhomoryUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				INFOPLIST_FILE = PhomoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.PhomoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Phomory;
+			};
+			name = Debug;
+		};
+		4D1648DC1E9598FE00D20B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C35CCE60C8E76D27DF7BCE2 /* Pods-PhomoryUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				INFOPLIST_FILE = PhomoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.PhomoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Phomory;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D16489F1E9598FE00D20B38 /* Build configuration list for PBXProject "Phomory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1648D21E9598FE00D20B38 /* Debug */,
+				4D1648D31E9598FE00D20B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1648D41E9598FE00D20B38 /* Build configuration list for PBXNativeTarget "Phomory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1648D51E9598FE00D20B38 /* Debug */,
+				4D1648D61E9598FE00D20B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1648D71E9598FE00D20B38 /* Build configuration list for PBXNativeTarget "PhomoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1648D81E9598FE00D20B38 /* Debug */,
+				4D1648D91E9598FE00D20B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1648DA1E9598FE00D20B38 /* Build configuration list for PBXNativeTarget "PhomoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1648DB1E9598FE00D20B38 /* Debug */,
+				4D1648DC1E9598FE00D20B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D16489C1E9598FE00D20B38 /* Project object */;
+}

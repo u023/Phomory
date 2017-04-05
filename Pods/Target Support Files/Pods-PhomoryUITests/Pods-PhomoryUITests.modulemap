@@ -1,0 +1,6 @@
+framework module Pods_PhomoryUITests {
+  umbrella header "Pods-PhomoryUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

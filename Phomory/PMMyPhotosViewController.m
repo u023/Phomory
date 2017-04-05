@@ -1,0 +1,164 @@
+//
+//  PMMyPhotosViewController.m
+//  Phomory
+//
+//  Created by yonglim on 4/5/17.
+//  Copyright © 2017 ynk. All rights reserved.
+//
+
+#import "FlickrKit.h"
+
+#import "PMMyPhotosViewController.h"
+
+@interface PMMyPhotosViewController ()
+@property (nonatomic, retain) FKFlickrNetworkOperation *myPhotostreamOp;
+@property (nonatomic, retain) NSMutableArray *myPhotoURLs;
+@property (nonatomic, assign) BOOL isAlreadyAdded;
+@end
+
+@implementation PMMyPhotosViewController
+//@synthesize myPhotoURLs = _myPhotoURLs;
+
+- (id)initWithURLArray:(NSMutableArray *)urlArray
+{
+    self = [super init];
+    if (self) {
+        self.myPhotoURLs = urlArray;
+    }
+    return self;
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.myPhotoURLs = _myPhotoURLs;
+    }
+    return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    self.navigationController.navigationBarHidden = YES;
+    //    self.isAlreadyAdded = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (!self.isAlreadyAdded) {
+        [self getMyPhotoURLs];
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    if (!self.isAlreadyAdded) {
+        for (NSURL *url in self.myPhotoURLs) {
+            NSURLRequest *request = [NSURLRequest requestWithURL:url];
+            [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+                UIImage *image = [[UIImage alloc] initWithData:data];
+                [self addImageToView:image];
+            }];
+        }
+        self.isAlreadyAdded = YES;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.myPhotostreamOp cancel];
+    
+    //[self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+}
+
+- (void) dealloc
+{
+    [self.myPhotostreamOp cancel];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)addImageToView:(UIImage *)image
+{
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    
+    CGFloat width = CGRectGetWidth(self.imageScrollView.frame);
+    CGFloat imageRatio = image.size.width / image.size.height;
+    CGFloat height = width / imageRatio;
+    CGFloat x = 0;
+    CGFloat y = self.imageScrollView.contentSize.height;
+    
+    imageView.frame = CGRectMake(x, y, width, height);
+    
+    CGFloat newHeight = self.imageScrollView.contentSize.height + height;
+    self.imageScrollView.contentSize = CGSizeMake(320, newHeight);
+    
+    [self.imageScrollView addSubview:imageView];
+}
+
+- (void)getMyPhotoURLs
+{
+    if ([FlickrKit sharedFlickrKit].isAuthorized) {
+        
+        self.myPhotostreamOp = [[FlickrKit sharedFlickrKit] call:@"flickr.photos.search" args:@{@"user_id": [FlickrKit sharedFlickrKit].userID, @"per_page": @"15"} maxCacheAge:FKDUMaxAgeNeverCache completion:^(NSDictionary<NSString *,id> * _Nullable response, NSError * _Nullable error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (response) {
+                    // Get photo list here
+                    self.myPhotoURLs = [NSMutableArray array];
+                    for (NSDictionary *photoDictionary in [response valueForKeyPath:@"photos.photo"]) {
+                        NSURL *url = [[FlickrKit sharedFlickrKit] photoURLForSize:FKPhotoSizeLarge1024 fromPhotoDictionary:photoDictionary];
+                        [self.myPhotoURLs addObject:url];
+                    }
+                } else {
+                    //Error handling
+                    switch (error.code) {
+                        case FKFlickrInterestingnessGetListError_ServiceCurrentlyUnavailable:
+                            
+                            break;
+                            
+                        default:
+                            break;
+                    }
+                    
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                        [alert dismissViewControllerAnimated:YES completion:nil];
+                    }];
+                    [alert addAction:cancel];
+                    [self presentViewController:alert animated:YES completion:nil];
+                }
+            });
+        }];
+    } else {
+        NSString *msg = @"Please login first";
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:msg preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [alert dismissViewControllerAnimated:YES completion:nil];
+        }];
+        [alert addAction:cancel];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+}
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+@end
+

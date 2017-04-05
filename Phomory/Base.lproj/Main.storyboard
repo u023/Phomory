@@ -207,7 +207,7 @@
             </objects>
             <point key="canvasLocation" x="-1322" y="-2008"/>
         </scene>
-        <!--Today's Interest-->
+        <!--Today's Interesting-->
         <scene sceneID="Gqj-8T-68f">
             <objects>
                 <viewController id="ODF-Zc-xqp" customClass="PMTodaysInterestViewController" sceneMemberID="viewController">
@@ -231,7 +231,7 @@
                             <constraint firstAttribute="trailing" secondItem="8UE-Ma-uYD" secondAttribute="trailing" id="dKP-WW-sgk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Today's Interest" image="loupex32" selectedImage="loupex32" id="EWE-wc-FZk"/>
+                    <tabBarItem key="tabBarItem" title="Today's Interesting" image="loupex32" selectedImage="loupex32" id="EWE-wc-FZk"/>
                     <connections>
                         <outlet property="imageScrollView" destination="8UE-Ma-uYD" id="01k-lS-QqB"/>
                     </connections>

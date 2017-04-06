@@ -302,55 +302,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb6-Ld-fO7">
-                                <rect key="frame" x="0.0" y="457" width="375" height="89"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="198" y="506" width="161" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="2Dk-6b-iJI"/>
+                                    <constraint firstAttribute="height" constant="40" id="2Dk-6b-iJI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Upload">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="uploadImageButtonPressed:" destination="SlX-dN-5oI" eventType="touchUpInside" id="fPG-Oo-wUM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In7-Uv-vSa">
-                                <rect key="frame" x="0.0" y="373" width="375" height="76"/>
-                                <color key="backgroundColor" red="0.31272804739999999" green="0.76564222569999996" blue="0.9700087905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="506" width="157" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="imj-Us-PwY"/>
+                                    <constraint firstAttribute="height" constant="40" id="imj-Us-PwY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Select Image">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="selectImageButtonPressed:" destination="SlX-dN-5oI" eventType="touchUpInside" id="5fj-Oy-Qm4"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-Gg-UUT">
-                                <rect key="frame" x="0.0" y="364" width="375" height="2"/>
-                            </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CGR-86-mZi" userLabel="Upload Photo Image View">
-                                <rect key="frame" x="16" y="20" width="343" height="331"/>
+                                <rect key="frame" x="16" y="27" width="343" height="447"/>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-Gg-UUT">
+                                <rect key="frame" x="0.0" y="490" width="375" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Nnp-Gg-UUT" secondAttribute="trailing" id="8MM-x3-nMt"/>
-                            <constraint firstItem="In7-Uv-vSa" firstAttribute="leading" secondItem="cb6-Ld-fO7" secondAttribute="leading" id="ANZ-Kz-vRB"/>
+                            <constraint firstItem="In7-Uv-vSa" firstAttribute="leading" secondItem="cb6-Ld-fO7" secondAttribute="leading" constant="-182" id="ANZ-Kz-vRB"/>
                             <constraint firstItem="CGR-86-mZi" firstAttribute="leading" secondItem="fdc-wE-MfP" secondAttribute="leadingMargin" id="Axk-Xt-sYV"/>
-                            <constraint firstItem="In7-Uv-vSa" firstAttribute="leading" secondItem="Nnp-Gg-UUT" secondAttribute="leading" id="LvH-Fr-TFz"/>
+                            <constraint firstItem="In7-Uv-vSa" firstAttribute="leading" secondItem="Nnp-Gg-UUT" secondAttribute="leading" constant="16" id="LvH-Fr-TFz"/>
                             <constraint firstItem="l3T-gM-CKg" firstAttribute="top" secondItem="cb6-Ld-fO7" secondAttribute="bottom" constant="8" symbolic="YES" id="cZF-HY-WUM"/>
-                            <constraint firstItem="In7-Uv-vSa" firstAttribute="trailing" secondItem="Nnp-Gg-UUT" secondAttribute="trailing" id="dIz-BF-5xj"/>
+                            <constraint firstItem="In7-Uv-vSa" firstAttribute="trailing" secondItem="Nnp-Gg-UUT" secondAttribute="trailing" constant="-202" id="dIz-BF-5xj"/>
                             <constraint firstItem="CGR-86-mZi" firstAttribute="centerX" secondItem="Nnp-Gg-UUT" secondAttribute="centerX" id="hKr-ob-dXI"/>
-                            <constraint firstItem="In7-Uv-vSa" firstAttribute="top" secondItem="Nnp-Gg-UUT" secondAttribute="bottom" constant="7" id="kIC-xh-Vps"/>
-                            <constraint firstItem="In7-Uv-vSa" firstAttribute="leading" secondItem="fdc-wE-MfP" secondAttribute="leading" id="lX6-jr-ctb"/>
-                            <constraint firstItem="cb6-Ld-fO7" firstAttribute="top" secondItem="In7-Uv-vSa" secondAttribute="bottom" constant="8" symbolic="YES" id="mwN-E7-bMf"/>
-                            <constraint firstItem="Nnp-Gg-UUT" firstAttribute="top" secondItem="CGR-86-mZi" secondAttribute="bottom" constant="13" id="pXg-a0-jrL"/>
-                            <constraint firstItem="CGR-86-mZi" firstAttribute="top" secondItem="fdc-wE-MfP" secondAttribute="top" constant="20" id="raR-G5-9nX"/>
-                            <constraint firstItem="In7-Uv-vSa" firstAttribute="trailing" secondItem="cb6-Ld-fO7" secondAttribute="trailing" id="xz1-Ox-Aax"/>
+                            <constraint firstItem="In7-Uv-vSa" firstAttribute="top" secondItem="Nnp-Gg-UUT" secondAttribute="bottom" constant="14" id="kIC-xh-Vps"/>
+                            <constraint firstItem="In7-Uv-vSa" firstAttribute="leading" secondItem="fdc-wE-MfP" secondAttribute="leading" constant="16" id="lX6-jr-ctb"/>
+                            <constraint firstItem="cb6-Ld-fO7" firstAttribute="top" secondItem="In7-Uv-vSa" secondAttribute="bottom" constant="-40" id="mwN-E7-bMf"/>
+                            <constraint firstItem="Nnp-Gg-UUT" firstAttribute="top" secondItem="CGR-86-mZi" secondAttribute="bottom" constant="16" id="pXg-a0-jrL"/>
+                            <constraint firstItem="CGR-86-mZi" firstAttribute="top" secondItem="fdc-wE-MfP" secondAttribute="top" constant="27" id="raR-G5-9nX"/>
+                            <constraint firstItem="In7-Uv-vSa" firstAttribute="trailing" secondItem="cb6-Ld-fO7" secondAttribute="trailing" constant="-186" id="xz1-Ox-Aax"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Camera" image="photo-camerax32" selectedImage="photo-camerax32" id="BvR-Lf-JVT"/>

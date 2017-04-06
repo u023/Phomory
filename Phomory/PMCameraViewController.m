@@ -34,7 +34,6 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.uploadOp cancel];
 }
 
 - (void)dealloc

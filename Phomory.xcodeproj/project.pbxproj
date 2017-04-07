@@ -31,6 +31,8 @@
 		4D4FDC1B1E959CEF001528B8 /* PMMyPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC1A1E959CEF001528B8 /* PMMyPhotosViewController.m */; };
 		4D4FDC1E1E959D06001528B8 /* PMCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC1D1E959D06001528B8 /* PMCameraViewController.m */; };
 		4D4FDC211E959E66001528B8 /* PMAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FDC201E959E66001528B8 /* PMAuthViewController.m */; };
+		4D7212AB1E96DD480018B115 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7212AA1E96DD480018B115 /* PMAboutViewController.m */; };
+		4D7212AE1E98403F0018B115 /* PMCreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7212AD1E98403F0018B115 /* PMCreditViewController.m */; };
 		4EE038B483B2E119ED61DBEA /* Pods_PhomoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ED59DC8EB4FDB28B31A0FA /* Pods_PhomoryTests.framework */; };
 		76FAE544876C8FD3A4EE5E07 /* Pods_Phomory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678405FC17EDAB80EBF624F5 /* Pods_Phomory.framework */; };
 		B49B2DEA521B31CB8C729E90 /* Pods_PhomoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA69318108D1E5A27CB657ED /* Pods_PhomoryUITests.framework */; };
@@ -92,6 +94,10 @@
 		4D4FDC1D1E959D06001528B8 /* PMCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCameraViewController.m; sourceTree = "<group>"; };
 		4D4FDC1F1E959E66001528B8 /* PMAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAuthViewController.h; sourceTree = "<group>"; };
 		4D4FDC201E959E66001528B8 /* PMAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAuthViewController.m; sourceTree = "<group>"; };
+		4D7212A91E96DD480018B115 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
+		4D7212AA1E96DD480018B115 /* PMAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAboutViewController.m; sourceTree = "<group>"; };
+		4D7212AC1E98403F0018B115 /* PMCreditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCreditViewController.h; sourceTree = "<group>"; };
+		4D7212AD1E98403F0018B115 /* PMCreditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCreditViewController.m; sourceTree = "<group>"; };
 		5EFD887DF47BBBFB64C31C6E /* Pods-PhomoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhomoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhomoryTests/Pods-PhomoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		614BACA5147897A098265001 /* Pods-Phomory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phomory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phomory/Pods-Phomory.debug.xcconfig"; sourceTree = "<group>"; };
 		678405FC17EDAB80EBF624F5 /* Pods_Phomory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phomory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +175,10 @@
 				4D4FDC1A1E959CEF001528B8 /* PMMyPhotosViewController.m */,
 				4D4FDC1C1E959D06001528B8 /* PMCameraViewController.h */,
 				4D4FDC1D1E959D06001528B8 /* PMCameraViewController.m */,
+				4D7212A91E96DD480018B115 /* PMAboutViewController.h */,
+				4D7212AA1E96DD480018B115 /* PMAboutViewController.m */,
+				4D7212AC1E98403F0018B115 /* PMCreditViewController.h */,
+				4D7212AD1E98403F0018B115 /* PMCreditViewController.m */,
 				4D1648B31E9598FE00D20B38 /* Main.storyboard */,
 				4D1648B61E9598FE00D20B38 /* Assets.xcassets */,
 				4D1648B81E9598FE00D20B38 /* LaunchScreen.storyboard */,
@@ -546,8 +556,10 @@
 				4D4FDC181E959CD9001528B8 /* PMTodaysInterestViewController.m in Sources */,
 				4D1648A91E9598FE00D20B38 /* main.m in Sources */,
 				4D4FDC151E959CB8001528B8 /* PMSettingsViewController.m in Sources */,
+				4D7212AE1E98403F0018B115 /* PMCreditViewController.m in Sources */,
 				4D4FDC121E959CA7001528B8 /* PMFirstRunViewController.m in Sources */,
 				4D4FDC211E959E66001528B8 /* PMAuthViewController.m in Sources */,
+				4D7212AB1E96DD480018B115 /* PMAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -332,7 +332,7 @@
 				TargetAttributes = {
 					4D1648A31E9598FE00D20B38 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 7P8FHBU8VX;
+						DevelopmentTeam = VXV4445GR9;
 						ProvisioningStyle = Automatic;
 					};
 					4D1648BF1E9598FE00D20B38 = {
@@ -711,7 +711,7 @@
 			baseConfigurationReference = 614BACA5147897A098265001 /* Pods-Phomory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				DEVELOPMENT_TEAM = VXV4445GR9;
 				INFOPLIST_FILE = Phomory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.Phomory;
@@ -724,7 +724,7 @@
 			baseConfigurationReference = BFF88B9CF062C6B2B1DF715E /* Pods-Phomory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7P8FHBU8VX;
+				DEVELOPMENT_TEAM = VXV4445GR9;
 				INFOPLIST_FILE = Phomory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ynk.Phomory;
